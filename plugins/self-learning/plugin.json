@@ -1,0 +1,11 @@
+{
+  "name": "self-learning",
+  "description": "A draft-and-compact documentation learning loop that teaches your AI agent to capture decisions, solve problems, and maintain living documentation.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Bitspire Team"
+  },
+  "license": "MIT",
+  "keywords": ["documentation", "learning", "self-improvement", "drafts", "compaction"],
+  "skills": "skills/"
+}
