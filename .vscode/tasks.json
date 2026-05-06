@@ -1,11 +1,23 @@
 {
-        "version": "2.0.0",
-        "tasks": [
-                {
-                        "label": "Run Promptfoo Evaluation",
-                        "type": "shell",
-                        "command": "npx -y promptfoo@latest eval --env-file .env",
-                        "problemMatcher": []
-                }
-        ]
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run Promptfoo Evaluation",
+			"type": "shell",
+			"command": "npx -y promptfoo@latest eval --env-file .env",
+			"problemMatcher": []
+		},
+		{
+			"label": "Start Squad Background Watcher",
+			"type": "shell",
+			"command": "echo \"Squad background watcher starting... (Update this command in tasks.json with your actual squad runner script)\" && npx -y nodemon --watch .squad/inbox --exec \"echo Event triggered, run squad...\"",
+			"isBackground": true
+		},
+		{
+			"label": "Start Squad Background Watcher",
+			"type": "shell",
+			"command": "echo \"Squad background watcher standing by. Please update task inside .vscode/tasks.json to your actual start script.\"; npx -y nodemon --watch .squad/inbox --exec \"echo Inbox updated...\"",
+			"isBackground": true
+		}
+	]
 }
