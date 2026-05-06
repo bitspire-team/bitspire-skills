@@ -13,6 +13,12 @@
       "description": "A draft-and-compact documentation learning loop that teaches your AI agent to capture decisions, solve problems, and maintain living documentation.",
       "version": "1.0.0",
       "source": "./plugins/self-learning"
+    },
+    {
+      "name": "dev-team",
+      "description": "Autonomous Agent Team orchestrating requirements, implementation, and code review.",
+      "version": "1.0.0",
+      "source": "./plugins/dev-team"
     }
   ]
 }

@@ -1,0 +1,50 @@
+description: "Evaluation for dev-team plugin agents"
+prompts:
+  - id: product-manager
+    label: Product Manager
+    file: "skills/product-manager/SKILL.md"
+  - id: developer
+    label: Developer
+    file: "skills/developer/SKILL.md"
+  - id: reviewer
+    label: Code Reviewer
+    file: "skills/reviewer/SKILL.md"
+
+providers:
+  - id: openai:gpt-4o
+
+tests:
+  - description: "Test Product Manager formatting"
+    options:
+      prompt: product-manager
+    vars:
+      user_input: "I want an auth system"
+    assert:
+      - type: icontains
+        value: "### 1. Feature Name"
+      - type: icontains
+        value: "### 2. User Stories"
+      - type: icontains
+        value: "### 3. Technical Constraints"
+      - type: icontains
+        value: "### 4. Acceptance Criteria"
+
+  - description: "Test Developer returns to PM"
+    options:
+      prompt: developer
+    vars:
+      user_input: "Implement the login logic"
+    assert:
+      - type: icontains
+        value: "comple" # Usually says "completed" or something indicating return to PM
+
+  - description: "Test Reviewer feedback loop"
+    options:
+      prompt: reviewer
+    vars:
+      user_input: "Review this login code: `def login(): pass`"
+    assert:
+      - type: icontains
+        value: "Review Report"
+      - type: icontains
+        value: "Action Items"

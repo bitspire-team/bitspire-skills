@@ -1,0 +1,4 @@
+# Exclude Promptfoo evaluation files from the built artifact
+**/eval-prompt.json
+**/eval-tests.yaml
+promptfooconfig.yaml

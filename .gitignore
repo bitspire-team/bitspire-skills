@@ -2,3 +2,7 @@
 Thumbs.db
 *.swp
 *.swo
+
+# Environment variables
+.env
+

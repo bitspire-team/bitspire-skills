@@ -1,0 +1,13 @@
+description: "Bitspire Skills Evaluation Pipeline"
+
+providers:
+  # Using Remote LiteLLM Proxy endpoint
+  - id: openai:chat:github_copilot/gpt-4o
+    config:
+      apiBaseUrl: https://litellm.bitspire.team
+      apiKeyEnvar: LITELLM_API_KEY
+
+prompts:
+  - plugins/self-learning/skills/learn/eval-prompt.json
+
+tests: plugins/self-learning/skills/learn/eval-tests.yaml

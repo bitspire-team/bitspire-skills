@@ -1,0 +1,6 @@
+{
+    "name": "dev-team",
+    "description": "Autonomous Agent Team Plugin Registration",
+    "version": "1.0.0",
+    "agents": "agents/"
+}

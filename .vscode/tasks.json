@@ -1,0 +1,11 @@
+{
+        "version": "2.0.0",
+        "tasks": [
+                {
+                        "label": "Run Promptfoo Evaluation",
+                        "type": "shell",
+                        "command": "npx -y promptfoo@latest eval --env-file .env",
+                        "problemMatcher": []
+                }
+        ]
+}
