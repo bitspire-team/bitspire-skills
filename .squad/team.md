@@ -16,6 +16,8 @@
 | Linus | Technical Leader | [Charter](agents/linus/charter.md) | Active |
 | Alan | AI Engineer | [Charter](agents/alan/charter.md) | Active |
 | Grace | Code Reviewer | [Charter](agents/grace/charter.md) | Active |
+| Researcher | Researcher | [Charter](agents/researcher/charter.md) | Active |
+| QA | Quality Assurance | [Charter](agents/qa/charter.md) | Active |
 
 ## Project Context
 

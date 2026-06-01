@@ -8,15 +8,23 @@
 			"problemMatcher": []
 		},
 		{
-			"label": "Start Squad Background Watcher",
+			"label": "Validate Squad Setup",
 			"type": "shell",
-			"command": "echo \"Squad background watcher starting... (Update this command in tasks.json with your actual squad runner script)\" && npx -y nodemon --watch .squad/inbox --exec \"echo Event triggered, run squad...\"",
+			"command": "npx -y @bradygaster/squad-cli doctor",
+			"problemMatcher": []
+		},
+		{
+			"label": "Start Skill Refinement Loop",
+			"type": "shell",
+			"command": "npx -y @bradygaster/squad-cli loop --file prompts/process-refine-learn.loop.md --interval 1 --agent-cmd \"cmd /c copilot\"",
+			"problemMatcher": [],
 			"isBackground": true
 		},
 		{
-			"label": "Start Squad Background Watcher",
+			"label": "Start Task Inbox Loop",
 			"type": "shell",
-			"command": "echo \"Squad background watcher standing by. Please update task inside .vscode/tasks.json to your actual start script.\"; npx -y nodemon --watch .squad/inbox --exec \"echo Inbox updated...\"",
+			"command": "npx -y @bradygaster/squad-cli loop --file prompts/task-inbox.loop.md --interval 1 --agent-cmd \"cmd /c copilot\"",
+			"problemMatcher": [],
 			"isBackground": true
 		}
 	]

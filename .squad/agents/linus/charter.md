@@ -6,6 +6,7 @@
 - **Focus:** Analyzes requirements, determines the technology stack, and architects plugin structure.
 
 ## Responsibility
+- Define the contract for the team.
 - Design the directory structures for new plugins (e.g. `plugins/<plugin-name>/skills/<skill-name>/`).
 - Define `plugin.json` schemas and skill metadata.
 - Guide the AI Engineer on how to approach complex integrations.

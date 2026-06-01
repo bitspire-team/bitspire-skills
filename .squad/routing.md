@@ -7,12 +7,13 @@ How to decide who handles what.
 | Work Type | Route To | Examples |
 |-----------|----------|----------|
 | Product scoping & vision | Ada | User stories, acceptance criteria, scoping skills |
-| Architecture & design | Linus | Directory structures, plugin schemas, tool selection |
+| Architecture & design | Linus | Directory structures, plugin schemas, tool selection, define contract for the team |
 | AI engineering & coding | Alan | Promptfoo tests, SKILL.md instructions, agent dev |
 | Code review | Grace | Review PRs, check quality, suggest improvements |
-| Testing | Alan | Write tests, find edge cases, verify fixes |
+| Testing | QA | Write test cases, find edge cases, verify fixes |
 | Scope & priorities | Ada | What to build next, trade-offs, decisions |
 | Session logging | Scribe | Automatic — never needs routing |
+| Research | Researcher | Research the topic, exploratory searches |
 
 ## Issue Routing
 
