@@ -16,4 +16,4 @@ This repository contains curated AI agent skills and plugins (such as the `self-
 - **Testing Skills:** When modifying or creating new skills, always write Promptfoo evaluation test cases to ensure the LLM respects the constraints and doesn't drift.
 - **Skill Structure:** Each skill must live in `plugins/<plugin-name>/skills/<skill-name>/` and contain a `SKILL.md` file. Templates should be placed in an `assets/` subdirectory.
 - **Tone & Style:** Maintain concise, imperative instructions in `SKILL.md` files so the agent clearly understands its boundaries.
-- **Team Preference:** All team members use 4-space indents. Strictly avoid using tools with less than 10k downloads.
+- **Team Preference:** All team members use 4-space indents. Strictly avoid using any packages with fewer than 10,000 weekly downloads on their respective registries.
