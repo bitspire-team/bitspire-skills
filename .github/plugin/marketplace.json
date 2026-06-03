@@ -21,10 +21,10 @@
       "source": "./plugins/dev-team"
     },
     {
-      "name": "python-development",
+      "name": "dev-best-practices",
       "description": "Python Development Instructions and Best Practices",
       "version": "1.0.0",
-      "source": "./plugins/python-development"
+      "source": "./plugins/dev-best-practices"
     }
   ]
 }
