@@ -19,6 +19,12 @@
       "description": "Autonomous Agent Team orchestrating requirements, implementation, and code review.",
       "version": "1.0.0",
       "source": "./plugins/dev-team"
+    },
+    {
+      "name": "python-development",
+      "description": "Python Development Instructions and Best Practices",
+      "version": "1.0.0",
+      "source": "./plugins/python-development"
     }
   ]
 }
